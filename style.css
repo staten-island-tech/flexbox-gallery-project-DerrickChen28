@@ -4,12 +4,33 @@ body,
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 62.5%; 
-}
-.parent{
-    font-size: 30px;
-    display: flex;
-}
-.child{
-    border: 1px solid red
-}
+    font-size: 100%; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(95, 152, 160);
+  }
+  .parent{
+      font-size: 30px;
+      display: flex;
+      justify-content:space-around;
+      flex-direction:row;
+      flex-wrap: wrap;
+  }
+
+  img {
+    height:12rem;
+  }
+  .card {
+    border: solid red;
+    text-align: center;
+    margin: 0.5rem;
+    box-shadow: 2px 2px;
+    flex-basis: 20%;
+    width: 30%;
+    
+    
+  }
+  h1{
+  font-size: 300%;
+  text-align: center;
+  }
+  
