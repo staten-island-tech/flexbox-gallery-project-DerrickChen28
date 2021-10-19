@@ -33,6 +33,7 @@ body,
     border-radius: 10px;
     padding:1rem;
     
+    
   }
   h1{
   font-size:5rem;
@@ -49,7 +50,6 @@ body,
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  
   }
   .button{
     font-size:1rem;
@@ -62,13 +62,52 @@ body,
     outline-offset: 1rem;
   }
   .button:hover{
-    transform: scale(2.2);
+    transform: scale(3.3);
     outline-offset: 1rem;
   }
-  .card:hover .card:not(:hover)  {
-    transform: scale(0.8);
-    opacity: 0.5;
+  .button{
+    animation-duration: 2s; 
   }
+  .card{
+    animation-duration: 2s;
+    animation-name: slidein;
+    
+  }
+  .slidein{
+    animation-duration: 2s;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .card:hover {
+    background-color: rgb(216, 37, 162);
+  }
+  .pulse{ 
+    animation-duration: 1s;
+  }
+  .card:hover{ 
+    animation: pulse 1s 
+      infinite;
+    animation-timing-function: linear;  
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+    }
+  }
+ 
+  
+  
 
   
   
