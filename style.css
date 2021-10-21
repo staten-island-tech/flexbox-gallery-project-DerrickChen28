@@ -24,24 +24,25 @@ body,
     max-width: 100%;
   }
   .card {
-    border: solid rgb(14, 26, 206);
+    border: 1.5rem solid rgb(14, 26, 206);
     text-align: center;
-    margin: 2rem;
+    margin: 4rem;
     box-shadow: 0.75rem 0.75rem 0.5rem rgb(121, 127, 128);
-    flex-basis: 20%;
+    flex-basis: 25%;
     width: 40%;
     border-radius: 10px;
     padding:1rem;
     
     
   }
+  h1:hover{
+    animation-duration: 3s;
+    animation:glow 1s ease-in-out infinite alternate;
+  }
   h1{
   font-size:5rem;
   text-align: center;
   color: rgb(209, 25, 226);
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
   }
   @-webkit-keyframes glow {
     from {
@@ -52,7 +53,7 @@ body,
     }
   }
   .button{
-    font-size:1rem;
+    font-size:4rem;
     align-self: center;
     justify-content: space-between;
   }
